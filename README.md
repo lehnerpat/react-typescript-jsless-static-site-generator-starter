@@ -4,7 +4,7 @@ A starter for using [React](https://reactjs.org/) + [TypeScript](https://www.typ
 
 ## Prerequisites
 
-- Node.js in a current version (tested with v14, but should work with some prior versions too)
+- Node.js in a current version (tested with v20, but should work with some prior versions too)
 - Yarn or NPM
 
 ## Getting Started
@@ -31,7 +31,11 @@ A starter for using [React](https://reactjs.org/) + [TypeScript](https://www.typ
 
 6. Style your site with [`styled-components`](https://styled-components.com/).
 
-7. Put any static files (e.g. images, robots.txt) in the `static` directory, and they'll be copied to the output directory. This happens recursively, i.e. directory structures inside `static` are copied over.
+7. Put any static files (e.g. images, robots.txt) in the `static` directory, and they'll be copied to the output directory. The contents of `static` are copied directly into the output directory, e.g. `static/image.png` is copied to `out/image.png`. Directories inside `static` are copied over the same way.
+
+8. Build your site (see above) and put the output files created in the `out` directory to wherever your website is being served from, such as [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/).
+
+Happy building!
 
 ## Known Limitations
 
